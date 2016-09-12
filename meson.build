@@ -14,8 +14,6 @@ add_global_arguments(['--target-glib=2.32',
                       '--enable-deprecated'], language: 'vala')
 endif
 
-meson.add_install_script('install-vapi.sh')
-
 glib = dependency('glib-2.0')
 gobject = dependency('gobject-2.0')
 gio = dependency('gio-2.0')
